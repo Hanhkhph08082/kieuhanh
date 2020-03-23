@@ -12,6 +12,8 @@ import { ProductService } from "./services/product.service";
 import { ProductAddComponent } from "./product-add/product-add.component";
 import { AboutComponent } from "./about/about.component";
 import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
     ProductDetailComponent,
     ProductAddComponent,
     AboutComponent,
-    ProductManagerComponent
+    ProductManagerComponent,
+    NotFoundComponent,
+    HomeComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [ProductService],

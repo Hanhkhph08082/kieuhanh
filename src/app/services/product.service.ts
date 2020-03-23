@@ -10,7 +10,10 @@ export class ProductService {
   getProducts() { // lấy danh sách sp
     return this.products;
   }
-  getProduct() {} //chi tiết sp
+  getProduct(id) {
+  
+    return this.products.find(product => product.id ==id );
+  } //chi tiết sp
   removeProduct() {} //xóa
   addProduct(product) { //thêm sp
     let newObj = { id: 6, ...product };

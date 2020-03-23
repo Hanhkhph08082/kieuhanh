@@ -1,3 +1,5 @@
-<p>
-{{product.name}}
+<p *ngIf="product">
+	{{product.name}}
+	{{product.price}}
+	{{product.desc}}
 </p>

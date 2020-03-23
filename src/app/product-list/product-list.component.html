@@ -10,12 +10,12 @@
 					<p class="card-text">{{product.desc}}</p>
 				</div>
 				<div class="card-footer">
-					<button  (click)="showDetail(product)">Chi tiết</button>				
+					<button  routerLink="/product/{{product.id}}">Chi tiết</button>				
 					<button  (click)="removeItem(product.id)">Xóa</button>
 				</div>
 		</div>
 	</div>
 </div>
-<div *ngIf="selected">
+<!-- <div *ngIf="selected">
 <app-product-detail [data]= "selected"></app-product-detail>
-</div>
+</div> -->
