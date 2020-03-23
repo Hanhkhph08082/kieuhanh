@@ -6,6 +6,7 @@
 			<th>ID</th>
 			<th>Product Name</th>
 			<th>Price</th>
+      <th>Desc</th>
 			<th>Action</th>
 		</tr>
 	</thead>
@@ -13,9 +14,8 @@
 		<tr *ngFor="let product of products">
 			<th>{{product.id}}</th>
 			<th>{{product.name}}</th>
-			<th>
-				<p>${{product.price}}</p>
-			</th>
+			<th>${{product.price}}</th>
+      <th>{{product.desc}}</th>
 			<th>
 				<button routerLink="/product/{{product.id}}">Chi tiết</button>       
 				<button  (click)="removeItem(product.id)">Xóa</button>
