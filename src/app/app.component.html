@@ -13,10 +13,10 @@
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
+					<a class="nav-link" routerLink="/about">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Services</a>
+					<a class="nav-link" routerLink="/products">Product</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Contact</a>
@@ -25,7 +25,7 @@
 		</div>
 	</div>
 </nav>
-<!-- {{title}} -->
+
 
 <!-- Page Content -->
 <div class="container">
@@ -40,28 +40,28 @@
 		<!-- /.col-lg-3 -->
 
 		<div class="col-lg-9">
-
 			<router-outlet></router-outlet>
 
-			<!-- <app-product-add></app-product-add>		
+			<!-- 
+			<app-product-detail></app-product-detail>
+      <app-product-add></app-product-add>
 			<app-product-manager></app-product-manager>
-			<app-product-list></app-product-list>
-      <app-slide></app-slide> -->
-			<!-- /.row
+			<app-product-list></app-product-list> -->
+			<!-- /.row -->
 
 		</div>
 		<!-- /.col-lg-9 -->
 
-		</div>
-		<!-- /.row -->
+	</div>
+	<!-- /.row -->
 
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+	<div class="container">
+		<p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
 	</div>
 	<!-- /.container -->
-
-	<!-- Footer -->
-	<footer class="py-5 bg-dark">
-		<div class="container">
-			<p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-		</div>
-		<!-- /.container -->
-	</footer>
+</footer>

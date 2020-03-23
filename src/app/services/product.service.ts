@@ -7,18 +7,19 @@ export class ProductService {
   products = data;
 
   constructor() {}
-  getProducts() { // lấy danh sách sp
+  getProducts() {
+    // lấy danh sách sp
     return this.products;
   }
   getProduct(id) {
-  
-    return this.products.find(product => product.id ==id );
+    return this.products.find(product => product.id == id);
   } //chi tiết sp
   removeProduct() {} //xóa
-   updateProduct(product){
-    return this.products.map( item => item.id === product.id ? product : item);
+  updateProduct(product) {
+    return this.products.map(item => (item.id === product.id ? product : item));
   }
-  addProduct(product) { //thêm sp
+  addProduct(product) {
+    //thêm sp
     let newObj = { id: 6, ...product };
     this.products.push(product);
   }
