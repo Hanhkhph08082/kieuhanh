@@ -24,7 +24,7 @@ export class ProductEditComponent implements OnInit {
   }
   submitForm(){
     this.productService.updateProduct(this.product);
-    this.router.navigate(['/products']);
-    //this.router.navigate(['/manager-product']);
+    //this.router.navigate(['/products']);
+    this.router.navigate(['/manager-product']);
   }
 }
