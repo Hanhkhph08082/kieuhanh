@@ -17,7 +17,7 @@
       <th>{{product.desc}}</th>
 			<th>
 				<button routerLink="/product/{{product.id}}">Chi tiết</button>
-      <!-- <button routerLink="/product/add-product">Thêm</button>    -->
+        <button routerLink="/add-product">Thêm</button> 
         <button routerLink="/product/edit/{{product.id}}">Sửa</button>    
 				<button  (click)="removeItem(product.id)">Xóa</button>
 			</th>
