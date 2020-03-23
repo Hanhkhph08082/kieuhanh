@@ -15,6 +15,7 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
+import { ServiceComponent } from './service/service.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
     ProductManagerComponent,
     NotFoundComponent,
     HomeComponent,
-    ProductEditComponent
+    ProductEditComponent,
+    ServiceComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [ProductService],
