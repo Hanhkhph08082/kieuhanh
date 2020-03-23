@@ -15,6 +15,9 @@ export class ProductService {
     return this.products.find(product => product.id ==id );
   } //chi tiết sp
   removeProduct() {} //xóa
+   updateProduct(product){
+    return this.products.map( item => item.id === product.id ? product : item);
+  }
   addProduct(product) { //thêm sp
     let newObj = { id: 6, ...product };
     this.products.push(product);

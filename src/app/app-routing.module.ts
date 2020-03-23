@@ -7,17 +7,18 @@ import { ProductManagerComponent } from "./product-manager/product-manager.compo
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { HomeComponent } from "./home/home.component";
 import { ProductDetailComponent } from "./product-detail/product-detail.component";
+import { ProductEditComponent } from "./product-edit/product-edit.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path:"home", component: HomeComponent},
+  { path: "", redirectTo: "/home", pathMatch: "full" },
+  { path: "home", component: HomeComponent },
   { path: "add-product", component: ProductAddComponent },
   { path: "about", component: AboutComponent },
   { path: "products", component: ProductListComponent },
-  {path:"product/:id", component: ProductDetailComponent},
- { path: "manager-product", component: ProductManagerComponent },
- {path:"**", component:NotFoundComponent}
- 
+  { path: "product/:id", component: ProductDetailComponent },
+  { path: "product/edit/:id", component: ProductEditComponent },
+  { path: "manager-product", component: ProductManagerComponent },
+  { path: "**", component: NotFoundComponent }
 ];
 
 @NgModule({
