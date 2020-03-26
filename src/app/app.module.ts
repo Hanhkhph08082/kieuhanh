@@ -1,6 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { SlideComponent } from "./slide/slide.component";
@@ -32,7 +32,7 @@ import { ServiceComponent } from './service/service.component';
     ProductEditComponent,
     ServiceComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [ProductService],
   bootstrap: [AppComponent]
 })

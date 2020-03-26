@@ -1,18 +1,26 @@
 import { Injectable } from "@angular/core";
 import { data } from "../MockData";
 import { Product } from "../Product";
+import {HttpClient} from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export class ProductService {
-  products = data;
+  //products = data;
 
-  constructor() {}
-  getProducts() {
+  api= 'https://5e7b60c70e0463001633324f.mockapi.io/products';
+
+  constructor(
+    private http:HttpClient
+  ) {}
+  getProducts(): Observable<Product[]> {
     // lấy danh sách sp
-    return this.products;
+    //return this.products;
+     return this.http.get<Product[]>(this.api);
+
   }
-  getProduct(id) {
-    return this.products.find(product => product.id == id);
+    getProduct(id): Observable<Product> {
+    return this.http.get<Product>(`${this.api}/${id}`);
   } //chi tiết sp
   removeProduct() {} //xóa
   updateProduct(product) {
