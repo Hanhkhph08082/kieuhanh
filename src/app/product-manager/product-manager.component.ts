@@ -24,11 +24,12 @@ export class ProductManagerComponent implements OnInit {
  // selected: Product;
   products: Product[];
   selected: Product;
-  
+
   showDetail(product) {
     this.selected = product;
     console.log(this.selected);
   }
+  
   removeItem(id) {
     this.products = this.products.filter(product => product.id != id);
   }
